@@ -1,0 +1,4 @@
+App-rsync-retry-*
+.build
+*~
+nytprof*
