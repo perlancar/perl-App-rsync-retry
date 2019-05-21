@@ -1,0 +1,19 @@
+#!perl
+
+# DATE
+# VERSION
+
+exec "rsync-retry", "--retry-on-all", @ARGV;
+
+1;
+# ABSTRACT: Shortcut for rsync-retry --retry-on-all
+# PODNAME:
+
+=head1 DESCRIPTION
+
+This is shortcut for C<rsync-retry --retry-on-all> for the super-lazy (like me).
+
+
+=head1 SEE ALSO
+
+L<rsync-retry>
