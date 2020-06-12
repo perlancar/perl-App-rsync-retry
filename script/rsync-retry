@@ -51,7 +51,7 @@ _
     'retry-on=s'     => sub {
         $Opts{retry_on} = [split /\s*,\s*/, $_[1]];
     },
-    'retry-on-all|a' => \$Opts{retry_on_all},
+    'retry-on-all'   => \$Opts{retry_on_all},
 );
 
 my $rsync_cmd = $ENV{RSYNC_RETRY_RSYNC_CMD} ||
