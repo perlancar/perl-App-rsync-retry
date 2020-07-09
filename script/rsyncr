@@ -1,0 +1,24 @@
+#!perl
+
+# AUTHORITY
+# DATE
+# DIST
+# VERSION
+
+exec "rsync-retry", "--retry-on-all", @ARGV;
+
+1;
+# ABSTRACT: Shorter alias for rsync-retry-on-all
+# PODNAME:
+
+=head1 DESCRIPTION
+
+This is shorter alias for L<rsync-retry-on-all>, which in turn is a shortcut for
+C<rsync-retry --retry-on-all>, for the super-lazy (like me).
+
+
+=head1 SEE ALSO
+
+L<rsync-retry-on-all>
+
+L<rsync-retry>
