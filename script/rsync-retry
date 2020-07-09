@@ -1,6 +1,8 @@
 #!perl
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use 5.010001;
@@ -51,7 +53,7 @@ _
     'retry-on=s'     => sub {
         $Opts{retry_on} = [split /\s*,\s*/, $_[1]];
     },
-    'retry-on-all|a' => \$Opts{retry_on_all},
+    'retry-on-all'   => \$Opts{retry_on_all},
 );
 
 my $rsync_cmd = $ENV{RSYNC_RETRY_RSYNC_CMD} ||
@@ -143,6 +145,8 @@ Bool. Used to set default for --retry-on-all.
 
 
 =head1 SEE ALSO
+
+L<rsync-retry-on-all>.
 
 B<rsync>.
 
