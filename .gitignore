@@ -2,3 +2,4 @@ App-rsync-retry-*
 .build
 *~
 nytprof*
+.DS_Store
